@@ -48,7 +48,7 @@ public interface EStream<T, E extends Throwable> {
      * Returns an {@link EIntStream} whose items are the result of applying the provided mapping {@link EFunction} to
      * each item in this {@link EStream}.
      *
-     * @see Stream#mapToInt(ToIntFunction).
+     * @see Stream#mapToInt(ToIntFunction)
      */
     public EIntStream<E> mapToInt(EFunction<? super T, ? extends Integer, ? extends E> mapper);
 

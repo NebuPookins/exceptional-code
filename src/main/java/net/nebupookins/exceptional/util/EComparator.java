@@ -10,9 +10,9 @@ import java.util.function.Function;
  * <p>
  * Represents an ordering of the elements of type <code>I</code>. Whether this is a total ordering or a partial ordering
  * is "complicated". The javadocs for {@link Comparator} claim that it represents a total ordering, but this is
- * misleading: It is a total ordering only if we assume the {@link Comparator::compare} method never throws an
- * exception. Unfortunately, there's no way to communicate via the type system whether a particular instance of
- * {@link Comparator} intends to never throw exceptions or not.
+ * misleading: It is a total ordering only if we assume the {@link Comparator#compare(Object, Object)} method never
+ * throws an exception. Unfortunately, there's no way to communicate via the type system whether a particular instance
+ * of {@link Comparator} intends to never throw exceptions or not.
  * <p>
  * In contrast, {@link EComparator} has a natural convention that can be used to indicate whether its
  * {@link EComparator#compare(Object, Object)} method intends to throw an exception (and thus represents a partial
